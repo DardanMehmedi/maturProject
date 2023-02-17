@@ -7,13 +7,32 @@ function navbar (menuList) {
         const menu = document.createElement('menu')
         menu.classList.add('menu')
         menu.innerHTML = menuList[i].title
-        if(menuList[i].items.length){
+
+        if(menuList[i].items.length){ 
+            let liDiv = document.createElement(`div`)
+            liDiv.classList.add(`displayHideMenu`)
+            menu.addEventListener(`click`, (e)=>{
+                e.stopPropagation()
+                if(liDiv.classList.contains(`displayHideMenu`)){
+                    liDiv.classList.remove(`displayHideMenu`)
+                }else{
+                    liDiv.classList.add(`displayHideMenu`)
+                }
+
+            })
+            document.addEventListener(`click`, ()=>{
+                if(!liDiv.classList.contains(`displayHideMenu`)){
+                    liDiv.classList.add(`displayHideMenu`)
+                }
+            })
+            liDiv.classList.add(`hoverMenu`)
             for(let j = 0 ;j<menuList[i].items.length;j++){
                 const menuItem = document.createElement('li')
                 menuItem.classList.add('menuItem')
                 menuItem.innerHTML = menuList[i].items[j].title
-                menu.append(menuItem)
+                liDiv.append(menuItem)
             }
+            menu.append(liDiv)
         }
         menuDiv.append(menu)
     }

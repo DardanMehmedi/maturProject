@@ -1,6 +1,9 @@
 .menu{
     color: #c5e1f9;
     font-size: 2rem;   
+    position: relative;
+    padding: 0.7rem;
+    border-radius: 1rem;
 }
 
 .navbar{
@@ -42,4 +45,20 @@
 .themeButton{
     border-radius: 100%;
     width: 3rem;
+}
+
+.hoverMenu{
+    background-color: whitesmoke;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    position: absolute;
+}
+
+.menu:hover{
+    background-color:rgb(8, 22, 61);
+    cursor: pointer;
+}
+
+.displayHideMenu{
+    display: none;
 }
