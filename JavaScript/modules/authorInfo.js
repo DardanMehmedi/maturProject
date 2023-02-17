@@ -1,4 +1,4 @@
-import { sideBar } from "./sideBar.js";
+import { sidebar } from "./newSideBar.js";
 
 const authorInfo = [
   {
@@ -241,11 +241,4 @@ const filterArray = [
   },
 ];
 
-sideBar(authorInfo, filterArray);
-changeTheme();
-sleepBtn.addEventListener(`click`, () => {
-  localStorage.setItem(`theme`, theme === `dark` ? `light` : `dark`);
-  theme = localStorage.getItem(`theme`);
-  console.log(`theme`, theme);
-  changeTheme();
-});
+sidebar(authorInfo, filterArray);
