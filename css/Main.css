@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+.dudu {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6ecff;
+  width: 300px;
+}
+
+.rowi {
+  height: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .rowi {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cover {
+  width: 500px;
+  display: inline;
+}
+
+.bookinfo {
+  display: inline-block;
+}
+
+.gay {
+  display: inline;
+}
+
+.Aname {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.fonto {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+.name {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.coverM {
+  width: 175px;
+}
+
+.caroflex {
+  display: flex;
+}
+
+.Authors {
+  text-decoration: none;
+}
+
+.gapers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 5px;
+  column-gap: 20px;
+  padding-top: 20px;
+}
+
+.dull {
+  text-decoration: none;
+  color: black;
+}
+
+.snob {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-width: 1px;
+  font-size: 13px;
+  border-top: none;
+  border-bottom: none;
+  display: inline;
+  color: #c5e1f9;
+  background: rgb(3, 8, 22);
+  background: linear-gradient(
+    177deg,
+    rgba(3, 8, 22, 1) 2%,
+    rgba(14, 31, 88, 1) 100%
+  );
+  border-radius: 8px;
+}
+
+.kotFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.kakur {
+  padding: 0px;
+}
+
+.dropdown:hover {
+  background-color: #0c1b4a;
+}
+
+.show {
+  display: block;
+}
+
+.nav-item:hover {
+  background-color: #0c1b4a;
+}
+
+.hide {
+  display: none;
+}
+
+.navbar {
+  height: 130px;
+}
+
+.round {
+  border-radius: 360px;
+  background-color: #c5e1f9;
+}
+
+.change {
+  color: #c5e1f9;
+  background-color: #040816;
+}
+
+.actives {
+  color: #52aa5e;
+}
+
+.bookTitle {
+  text-align: center;
+  color: white;
+}
+
+.bookcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(3, 8, 22);
+  background: linear-gradient(
+    177deg,
+    rgba(3, 8, 22, 1) 2%,
+    rgb(8, 18, 48) 100%
+  );
+  max-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.smooth {
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.ulu {
+  height: 800px;
+  width: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+  list-style-type: none;
+}
+
+.ulu2 {
+  height: 450px;
+  width: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c5e1f9;
+  border-radius: 10px;
+}
+
+.flexo {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1440px) {
+  .snob {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    font-size: 9px;
+    border-top: none;
+    border-bottom: none;
+    display: inline-block;
+    color: #c5e1f9;
+    background: rgb(3, 8, 22);
+    background: linear-gradient(
+      177deg,
+      rgba(3, 8, 22, 1) 2%,
+      rgba(14, 31, 88, 1) 100%
+    );
+  }
+
+  .name {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+  }
+
+  .gigi {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ulu {
+    height: 1140px;
+    width: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style-type: none;
+  }
+
+  .rowi {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .flexo {
+    display: flex;
+    flex-direction: row;
+    width: 140%;
+    padding: 10px;
+  }
+}
