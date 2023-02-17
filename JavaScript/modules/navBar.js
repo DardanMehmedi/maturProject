@@ -10,7 +10,7 @@ function navbar (menuList) {
 
         if(menuList[i].items.length){ 
             let liDiv = document.createElement(`div`)
-            liDiv.classList.add(`displayHideMenu`)
+        liDiv.classList.add(`displayHideMenu`)
             menu.addEventListener(`click`, (e)=>{
                 e.stopPropagation()
                 if(liDiv.classList.contains(`displayHideMenu`)){

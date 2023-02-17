@@ -216,6 +216,21 @@ const authorInfo = [
     name: `William Shakespeare`,
     class: `ClassicAuthors`,
   },
+  {
+    href: `Authors/WilS.html`,
+    name: `This is not Broken`,
+    class: `ClassicAuthors`,
+  },
+  {
+    href: `Authors/WilS.html`,
+    name: `I Swear`,
+    class: `ClassicAuthors`,
+  },
+  {
+    href: `Authors/WilS.html`,
+    name: `Trust me bro !!`,
+    class: `ClassicAuthors`,
+  },
 ];
 
 const filterArray = [
