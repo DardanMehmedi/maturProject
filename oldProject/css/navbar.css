@@ -1,0 +1,67 @@
+.menu{
+    color: #c5e1f9;
+    font-size: 2rem;   
+    position: relative;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.navbar{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 14rem;
+    width: 100%;
+    background: rgb(3, 8, 22);
+    background: linear-gradient(177deg,rgba(3, 8, 22, 1) 2%,rgba(14, 31, 88, 1) 100%);
+}
+
+.menuContainer{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.searchContainer{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.searchBar{
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 22rem;
+    font-size: 1.4rem;
+}
+
+.searchButton{
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 1px solid green;
+    width: 7rem;
+    color: whitesmoke;
+    font-size: 1.4rem;
+}
+
+.themeButton{
+    border-radius: 100%;
+    width: 3rem;
+}
+
+.hoverMenu{
+    background-color: whitesmoke;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu:hover{
+    background-color:rgb(8, 22, 61);
+    cursor: pointer;
+}
+
+.displayHideMenu{
+    display: none;
+}
