@@ -13,3 +13,10 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.elementsContainer{
+    display: flex; 
+    width: 100%; 
+    height: calc( 100% - 14rem); 
+    align-items: center;
+}
