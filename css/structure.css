@@ -17,7 +17,7 @@ body{
 .elementsContainer{
     display: flex; 
     width: 100%; 
-    height: calc( 100% - 14rem); 
+    height: calc( 100% ); 
     align-items: center;
 }
 

@@ -2,9 +2,11 @@
     color: #c5e1f9;
     font-size: 2rem;   
     position: relative;
+    z-index: 2;
     padding: 0.7rem;
     border-radius: 1rem;
 }
+
 
 .navbar{
     display: flex;

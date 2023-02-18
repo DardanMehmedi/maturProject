@@ -7,9 +7,16 @@ function sidebar (authorInfo,filterArray) {
         button.id = filterArray[i].id
         button.innerHTML = filterArray[i].text
         button.classList.add('button')
+        if(i=== 0){
+          button.classList.add('focused')  
+        }
         filterContainer.append(button)
         sideBar.append(filterContainer)
     }
+
+    const hr = document.createElement('hr')
+    hr.classList.add('break')
+    sideBar.append(hr)
 
     for(let i=0 ; i<authorInfo.length;i++){
         const authorLinks = document.createElement('a')
@@ -32,11 +39,12 @@ function changeAuthors(){
     let btnC = document.getElementById(`cButton`);
     let btnRefresh = document.getElementById(`rest`)
 
-    console.log(`hyni`, cTitels);
-    console.log(`hyni`, fButton); 
-
-  btnFiction.addEventListener(`click`, () => {
-    console.log(`yni fiction`)
+  btnFiction.addEventListener(`click`, (e) => {
+    btnFiction.classList.add('focused')
+    btnNonFiction.classList.remove('focused')
+    btnC.classList.remove('focused')
+    btnRefresh.classList.remove('focused')
+    e.stopPropagation()
     for (var i = 0; i < cTitels.length; i++) {
       cTitels[i].style.display = "none";
     }
@@ -51,8 +59,12 @@ function changeAuthors(){
 
   });
   
-  btnNonFiction.addEventListener(`click`, () => {
-    console.log(`yni nfiction`)
+  btnNonFiction.addEventListener(`click`, (e) => {
+    btnNonFiction.classList.add('focused')
+    btnFiction.classList.remove('focused')
+    btnC.classList.remove('focused')
+    btnRefresh.classList.remove('focused')
+    e.stopPropagation()
     for (var i = 0; i < cTitels.length; i++) {
       cTitels[i].style.display = "none";
     }
@@ -67,8 +79,12 @@ function changeAuthors(){
 
   });
   
-  btnC.addEventListener(`click`, () => {
-    console.log(`yni cfiction`)
+  btnC.addEventListener(`click`, (e) => {
+    btnC.classList.add('focused')
+    btnNonFiction.classList.remove('focused')
+    btnFiction.classList.remove('focused')
+    btnRefresh.classList.remove('focused')
+    e.stopPropagation()
     for (var i = 0; i < cTitels.length; i++) {
       cTitels[i].style.display = "inline-block";
     }
@@ -83,8 +99,12 @@ function changeAuthors(){
 
   });
 
-  btnRefresh.addEventListener(`click`, () => {
-    console.log(`yni reset`)
+  btnRefresh.addEventListener(`click`, (e) => {
+    btnRefresh.classList.add('focused')
+    btnNonFiction.classList.remove('focused')
+    btnC.classList.remove('focused')
+    btnFiction.classList.remove('focused')
+    e.stopPropagation()
     for (var i = 0; i < cTitels.length; i++) {
       cTitels[i].style.display = "inline-block";
     }

@@ -221,6 +221,11 @@ const authorInfo = [
 
 const filterArray = [
   {
+    id: `rest`,
+    class: `snob`,
+    text: `ALL`,
+  },
+  {
     id: `fButton`,
     class: `snob`,
     text: `FICTION`,
@@ -235,11 +240,7 @@ const filterArray = [
     class: `snob`,
     text: `CLASSICS`,
   },
-  {
-    id: `rest`,
-    class: `snob`,
-    text: `HI`,
-  },
+ 
 ];
 
 sidebar(authorInfo, filterArray);

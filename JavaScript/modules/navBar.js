@@ -1,3 +1,4 @@
+
 function navbar (menuList) {
     const navbar  = document.getElementById('navbar')
     const menuDiv = document.createElement('div')
@@ -7,10 +8,33 @@ function navbar (menuList) {
         const menu = document.createElement('menu')
         menu.classList.add('menu')
         menu.innerHTML = menuList[i].title
+        if(menuList[i].title === 'Authors'){
+            const appendDiv = document.getElementById('append')
+            appendDiv.classList.add('displayHideMenu')
+            let authorDropdown = document.createElement('div')
+            authorDropdown.classList.add('sidebar')
+            authorDropdown.id = 'sidebar'
+            appendDiv.append(authorDropdown)
+            menu.addEventListener(`click`, (e)=>{
+                e.stopPropagation()
+                if(appendDiv.classList.contains(`displayHideMenu`)){
+                    appendDiv.classList.remove(`displayHideMenu`)
+                }else{
+                    appendDiv.classList.add(`displayHideMenu`)
+                }
+
+            })
+
+            document.addEventListener(`click`, ()=>{
+                if(!appendDiv.classList.contains(`displayHideMenu`)){
+                    appendDiv.classList.add(`displayHideMenu`)
+                }
+            })
+        }
 
         if(menuList[i].items.length){ 
             let liDiv = document.createElement(`div`)
-        liDiv.classList.add(`displayHideMenu`)
+            liDiv.classList.add(`displayHideMenu`)
             menu.addEventListener(`click`, (e)=>{
                 e.stopPropagation()
                 if(liDiv.classList.contains(`displayHideMenu`)){
@@ -37,8 +61,6 @@ function navbar (menuList) {
                 liDiv.append(menuLink) 
             }
             menu.append(liDiv)
-            // authorLinks.innerHTML = authorInfo[i].name
-            // authorLinks.href = authorInfo[i].href
         }
         menuDiv.append(menu)
     }
@@ -55,6 +77,7 @@ function navbar (menuList) {
     searchButton.innerHTML = 'Search'
     const themeButton = document.createElement('button')
     themeButton.classList.add('themeButton')
+    themeButton.id = 'themeButton'
 
     searchDiv.append(icon)
     searchDiv.append(searchBar)

@@ -1,0 +1,5 @@
+.dark{
+    background-color: #040816;
+    background: linear-gradient(180deg,rgb(13, 28, 77) 2%,rgba(3, 8, 22, 1) 100%);
+    color: #c5e1f9;
+}

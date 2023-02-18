@@ -3,13 +3,10 @@ import {navbar} from './navBar.js';
 const menuList = [
     {
     title: 'Home',
-    items: [{
-        href: `../index.html`,
-    }
-    ],
+    items: [],
     },
     {
-    title: 'Recommended',
+    title: 'Authors',
     items: [],
     },
     {
