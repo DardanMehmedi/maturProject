@@ -28,11 +28,17 @@ function navbar (menuList) {
             liDiv.classList.add(`hoverMenu`)
             for(let j = 0 ;j<menuList[i].items.length;j++){
                 const menuItem = document.createElement('li')
-                menuItem.classList.add('menuItem')
+                const menuLink = document.createElement('a') 
+                menuItem.classList.add('menuItem') 
+                menuLink.append(menuItem)
+                menuLink.href = menuList[i].items[j].href
                 menuItem.innerHTML = menuList[i].items[j].title
-                liDiv.append(menuItem)
+
+                liDiv.append(menuLink) 
             }
             menu.append(liDiv)
+            // authorLinks.innerHTML = authorInfo[i].name
+            // authorLinks.href = authorInfo[i].href
         }
         menuDiv.append(menu)
     }

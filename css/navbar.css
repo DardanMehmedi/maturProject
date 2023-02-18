@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    height: 30rem;
+    height: 14rem;
     width: 100%;
     background: rgb(3, 8, 22);
     background: linear-gradient(177deg,rgba(3, 8, 22, 1) 2%,rgba(14, 31, 88, 1) 100%);
@@ -32,6 +32,7 @@
     border-radius: 0.5rem;
     height: 3rem;
     width: 22rem;
+    font-size: 1.4rem;
 }
 
 .searchButton{
@@ -39,7 +40,8 @@
     background-color: transparent;
     border: 1px solid green;
     width: 7rem;
-    color: whitesmoke  
+    color: whitesmoke;
+    font-size: 1.4rem;
 }
 
 .themeButton{

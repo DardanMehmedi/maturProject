@@ -29,7 +29,7 @@ function bookList(books) {
     bookNamelink.append(books[i].bookTitle);
     bookNameDiv.append(paragraph);
     cardDiv.append(bookNameDiv);
-    document.getElementsByClassName(`gapers`)[0].append(cardDiv);
+    document.getElementsByClassName(`bookContainer`)[0].append(cardDiv);
   }
 }
 

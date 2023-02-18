@@ -1,4 +1,5 @@
 import { sidebar } from "./newSideBar.js";
+import {changeAuthors} from './NewSideBar.js';
 
 const authorInfo = [
   {
@@ -215,22 +216,7 @@ const authorInfo = [
     href: `Authors/WilS.html`,
     name: `William Shakespeare`,
     class: `ClassicAuthors`,
-  },
-  {
-    href: `Authors/WilS.html`,
-    name: `This is not Broken`,
-    class: `ClassicAuthors`,
-  },
-  {
-    href: `Authors/WilS.html`,
-    name: `I Swear`,
-    class: `ClassicAuthors`,
-  },
-  {
-    href: `Authors/WilS.html`,
-    name: `Trust me bro !!`,
-    class: `ClassicAuthors`,
-  },
+  }
 ];
 
 const filterArray = [
@@ -251,9 +237,10 @@ const filterArray = [
   },
   {
     id: `rest`,
-    class: `snob kakur`,
-    text: ``,
+    class: `snob`,
+    text: `HI`,
   },
 ];
 
 sidebar(authorInfo, filterArray);
+changeAuthors();

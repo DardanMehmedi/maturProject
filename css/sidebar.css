@@ -26,9 +26,13 @@
     display: flex;
     max-width: 30rem;
     flex-direction: column;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     row-gap: 0.5rem;
     overflow-y: auto;
     width: 20%;
     height: 100%;    
+}
+
+.authors{
+    display: none;
 }
