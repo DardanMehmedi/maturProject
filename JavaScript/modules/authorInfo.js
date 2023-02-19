@@ -8,6 +8,11 @@ const authorInfo = [
     class: `FictionAuthors`,
   },
   {
+    href: `Authors/AntR.html`,
+    name: `Anthony Ryan`,
+    class: `FictionAuthors`,
+  },
+  {
     href: `Authors/BarO.html`,
     name: `Barack Obama`,
     class: `NonFictionAuthors`,
@@ -138,6 +143,11 @@ const authorInfo = [
     class: `NonFictionAuthors`,
   },
   {
+    href: `Authors/NeiG.html`,
+    name: `Neil Gaiman`,
+    class: `FictionAuthors`,
+  },
+  {
     href: `Authors/NikC.html`,
     name: `Nik Cohn`,
     class: `NonFictionAuthors`,
@@ -146,6 +156,11 @@ const authorInfo = [
     href: `Authors/OliS.html`,
     name: `Oliver Sacks`,
     class: `NonFictionAuthors`,
+  },
+  {
+    href: `Authors/PhiP.html`,
+    name: `Philip Pullman`,
+    class: `FictionAuthors`,
   },
   {
     href: `Authors/RicD.html`,

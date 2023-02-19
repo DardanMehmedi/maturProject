@@ -49,3 +49,7 @@ html {
             scroll-behavior: smooth;
     }
 }
+
+.bookContainer{
+    overflow: scroll;
+}

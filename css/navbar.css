@@ -18,6 +18,14 @@
     background: linear-gradient(177deg,rgba(3, 8, 22, 1) 2%,rgba(14, 31, 88, 1) 100%);
 }
 
+.homeLink{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .menuContainer{
     display: flex;
     gap: 0.5rem;
@@ -50,11 +58,16 @@
 }
 
 .hoverMenu{
-    background-color: whitesmoke;
+    background-color: #e6ecff;
     border-radius: 0.6rem;
+    top: 9rem;
+    left: 17.5rem;
+    border: 1px solid #0f2b44;
     padding: 1rem;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    max-width: 50rem;
+    width: 35rem;
 }
 
 .menu:hover{
@@ -63,5 +76,5 @@
 }
 
 .displayHideMenu{
-    display: none;
+    visibility: hidden;
 }

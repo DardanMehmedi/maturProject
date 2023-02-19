@@ -3,42 +3,62 @@ function navbar (menuList) {
     const navbar  = document.getElementById('navbar')
     const menuDiv = document.createElement('div')
     menuDiv.classList.add('menuContainer')
+
+    const homeButton = document.createElement('a')
+    homeButton.classList.add('menu')
+    homeButton.classList.add(`homeLink`)
+    homeButton.innerHTML = menuList[0].title
+    menuDiv.append(homeButton);
+    homeButton.href = menuList[0].items[0].href
+    const appendDiv = document.getElementById('append')
+
     
-    for(let i = 0; i< menuList.length;i++){
+    for(let i = 1; i< menuList.length;i++){
         const menu = document.createElement('menu')
         menu.classList.add('menu')
         menu.innerHTML = menuList[i].title
         if(menuList[i].title === 'Authors'){
-            const appendDiv = document.getElementById('append')
-            appendDiv.classList.add('displayHideMenu')
             let authorDropdown = document.createElement('div')
             authorDropdown.classList.add('sidebar')
+            authorDropdown.classList.add('displayHideMenu')
             authorDropdown.id = 'sidebar'
             appendDiv.append(authorDropdown)
             menu.addEventListener(`click`, (e)=>{
                 e.stopPropagation()
-                if(appendDiv.classList.contains(`displayHideMenu`)){
-                    appendDiv.classList.remove(`displayHideMenu`)
+                if(authorDropdown.classList.contains(`displayHideMenu`)){
+                    authorDropdown.classList.remove(`displayHideMenu`)
+                    let genreDropdown = document.getElementsByClassName(`hoverMenu`)[0]
+                    genreDropdown.classList.add(`displayHideMenu`)
                 }else{
-                    appendDiv.classList.add(`displayHideMenu`)
+                    authorDropdown.classList.add(`displayHideMenu`)
                 }
 
             })
 
             document.addEventListener(`click`, ()=>{
-                if(!appendDiv.classList.contains(`displayHideMenu`)){
-                    appendDiv.classList.add(`displayHideMenu`)
+                if(!authorDropdown.classList.contains(`displayHideMenu`)){
+                    authorDropdown.classList.add(`displayHideMenu`)
                 }
             })
         }
 
+
         if(menuList[i].items.length){ 
             let liDiv = document.createElement(`div`)
+            liDiv.classList.add(`hoverMenu`)
+            liDiv.classList.add(`sideBar`)
             liDiv.classList.add(`displayHideMenu`)
+
+            let hr = document.createElement(`hr`)
+            hr.classList.add(`break`)
+
+            liDiv.append(hr)
             menu.addEventListener(`click`, (e)=>{
                 e.stopPropagation()
                 if(liDiv.classList.contains(`displayHideMenu`)){
                     liDiv.classList.remove(`displayHideMenu`)
+                    let authorDropdown = document.getElementById(`sidebar`)
+                    authorDropdown.classList.add(`displayHideMenu`)
                 }else{
                     liDiv.classList.add(`displayHideMenu`)
                 }
@@ -49,10 +69,14 @@ function navbar (menuList) {
                     liDiv.classList.add(`displayHideMenu`)
                 }
             })
-            liDiv.classList.add(`hoverMenu`)
+
+
+
             for(let j = 0 ;j<menuList[i].items.length;j++){
                 const menuItem = document.createElement('li')
                 const menuLink = document.createElement('a') 
+                
+                menuLink.classList.add(`authorLinks`)
                 menuItem.classList.add('menuItem') 
                 menuLink.append(menuItem)
                 menuLink.href = menuList[i].items[j].href
@@ -60,11 +84,15 @@ function navbar (menuList) {
 
                 liDiv.append(menuLink) 
             }
-            menu.append(liDiv)
+            appendDiv.append(liDiv)
         }
         menuDiv.append(menu)
     }
     navbar.append(menuDiv)
+
+    
+
+
 
     const searchDiv = document.createElement('div')
     searchDiv.classList.add('searchContainer')
