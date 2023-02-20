@@ -33,40 +33,32 @@ const menuList = [
             href: `/Genre/Urban Fantasy/gUrbanFantasy.html`,
         },
         {
-            title: 'Protal Fantasy',
-            href: `/Genre/Horror/gFantasy.html`,
-        },
-        {
-            title: 'UrbanFantasy',
-            href: `/Genre/Horror/gFantasy.html`,
-        },
-        {
             title: 'Dystopian',
-            href: `/Genre/Horror/gFantasy.html`,
+            href: `/Genre/Dystopian/gDystopian.html`,
         },
         {
-            title: 'Sci-Fi',
-            href: `/Genre/Horror/gFantasy.html`,
+            title: 'YA Sci-fi & Fantasy',
+            href: `/Genre/YA Sci-fi & Fantasy/gYA.html`,
         },
         {
-            title: 'Historical Fiction',
-            href: `/Genre/Horror/gFantasy.html`,
+            title: 'Sci-fi',
+            href: `/Genre/Sci-Fi/gSci-Fi.html`,
         },
         {
             title: 'Mystery',
-            href: `/Genre/Horror/gFantasy.html`,
+            href: `/Genre/Mystery/gMystery.html`,
         },
         {
             title: 'Thriller',
-            href: `/Genre/Horror/gFantasy.html`,
+            href: `/Genre/Thriller/gThriller.html`,
         },
         {
             title: 'Comedy',
-            href: `/Genre/Horror/gFantasy.html`,
+            href: `/Genre/Comedy/gComedy.html`,
         },
         {
             title: 'Tragedy',
-            href: `/Genre/Horror/gFantasy.html`,
+            href: `/Genre/Tragedy/gTragedy.html`,
         },
 
     ]

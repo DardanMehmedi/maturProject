@@ -45,6 +45,28 @@ function navbar (menuList) {
 
         if(menuList[i].items.length){ 
             let liDiv = document.createElement(`div`)
+            let fillterGenre = document.createElement(`div`)
+            let fButton = document.createElement(`button`)
+            let nFButton = document.createElement(`button`)
+            let cButton = document.createElement(`button`)
+            let reset = document.createElement(`button`)
+            liDiv.append(fillterGenre)
+            fillterGenre.classList.add(`filterContainer`)
+            fButton.classList.add(`button`)
+            nFButton.classList.add(`button`)
+            cButton.classList.add(`button`)
+            reset.classList.add(`button`)
+            fillterGenre.append(reset)
+            fillterGenre.append(fButton)
+            fillterGenre.append(nFButton)
+            fillterGenre.append(cButton)
+            fButton.append(`FICTION`)
+            nFButton.append(`NON-FICTION`)
+            cButton.append(`CLASSICS`)
+            reset.append(`ALL`)
+
+
+
             liDiv.classList.add(`hoverMenu`)
             liDiv.classList.add(`sideBar`)
             liDiv.classList.add(`displayHideMenu`)

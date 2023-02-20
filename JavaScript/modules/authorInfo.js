@@ -258,5 +258,8 @@ const filterArray = [
  
 ];
 
+
+
 sidebar(authorInfo, filterArray);
 changeAuthors();
+

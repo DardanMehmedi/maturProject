@@ -67,7 +67,7 @@
     position: absolute;
     z-index: 2;
     max-width: 50rem;
-    width: 35rem;
+    width: 50rem;
 }
 
 .menu:hover{
@@ -78,3 +78,34 @@
 .displayHideMenu{
     visibility: hidden;
 }
+
+.border{
+    display: flex;
+    height: 80rem;
+    width: 51rem;
+ }
+
+ .TitleStyle{
+    font-size: 9rem;
+    display: flex;
+ }
+
+ .flexKit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10rem;
+    padding-top: 5rem;
+ }
+
+ .textFlex{
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+ }
+
+ .infoStyle{
+    font-size: 2.5rem;
+    display: flex;
+    padding-top: 20px;
+ }
