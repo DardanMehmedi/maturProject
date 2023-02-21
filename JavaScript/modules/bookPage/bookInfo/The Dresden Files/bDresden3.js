@@ -1,9 +1,9 @@
 
-import { bookPage } from "../bookPageTemplate.js"
+import { bookPage } from "../../bookPageTemplate.js"
 
 const bookInfo = [
     {
-        bookCover: `../../bookPages/All Covers/df1.jpg`,
+        bookCover: `../../bookPages/All Covers/df3.jpg`,
         bookTitle: `Grave Peril`,
         bookInfo: [{
             P:`HARRY DRESDEN — WIZARD`},

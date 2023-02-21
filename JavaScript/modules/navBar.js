@@ -122,6 +122,7 @@ function navbar (menuList) {
     icon.classList.add('icon')
     const searchBar = document.createElement('input')
     searchBar.classList.add('searchBar')
+    searchBar.id = (`search`)
     const searchButton = document.createElement('button')
     searchButton.classList.add('searchButton')
     searchButton.innerHTML = 'Search'

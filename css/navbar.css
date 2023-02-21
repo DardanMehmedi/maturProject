@@ -96,6 +96,7 @@
     justify-content: center;
     column-gap: 10rem;
     padding-top: 5rem;
+    overflow: scroll;
  }
 
  .textFlex{
@@ -108,4 +109,33 @@
     font-size: 2.5rem;
     display: flex;
     padding-top: 20px;
+ }
+
+
+
+ .search{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    position: absolute;
+    top: 8rem;
+    right: 13.7rem;
+    width: 21rem;
+    background-color: #c5e1f9;
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    max-height: 90rem;
+    overflow-y: auto;
+ }
+
+ .search a{
+    text-decoration: none;
+ }
+
+ .search a:hover{
+    background-color: #8ec7f8;
+    border-radius: 0.5rem;
+    padding: 0.3rem
  }

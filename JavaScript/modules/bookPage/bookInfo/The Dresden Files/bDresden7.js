@@ -1,15 +1,13 @@
 
-import { bookPage } from "../bookPageTemplate.js"
+import { bookPage } from "../../bookPageTemplate.js"
 
 const bookInfo = [
     {
-        bookCover: `../../bookPages/All Covers/df1.jpg`,
-        bookTitle: `Storm Front`,
+        bookCover: `../../bookPages/All Covers/df7.jpg`,
+        bookTitle: `Dead Beat`,
         bookInfo: [{
-            P:`HARRY DRESDEN — WIZARD`},
-            {P:`Lost Items Found. Paranormal Investigations. Consulting. Advice. Reasonable Rates. No Love Potions, Endless Purses, or Other Entertainment.`},
-            {P:`Harry Dresden is the best at what he does. Well, technically, he's the only at what he does. So when the Chicago P.D. has a case that transcends mortal creativity or capability, they come to him for answers. For the "everyday" world is actually full of strange and magical things—and most don't play well with humans. That's where Harry comes in. Takes a wizard to catch a—well, whatever. There's just one problem. Business, to put it mildly, stinks.`},
-            {P:`So when the police bring him in to consult on a grisly double murder committed with black magic, Harry's seeing dollar signs. But where there's black magic, there's a black mage behind it. And now that mage knows Harry's name. And that's when things start to get interesting.`},
+            P:`Meet Harry Dresden, Chicago's first (and only) Wizard P.I. Turns out the 'everyday' world is full of strange and magical things - and most of them don't play well with humans. That's where Harry comes in.`},
+            {P:`Luckily, however, he's not alone. Although most people don't believe in magic, the Chicago P.D. has a Special Investigations department, headed by his good friend Karrin Murphy. They deal with the . . . stranger cases. It's down to Karrin that Harry sneaks into Graceland Cemetery to meet a vampire named Mavra. Mavra has evidence that would destroy Karrin's career, and her demands are simple. She wants the Word of Kemmler - and all the power that comes with it. But first, Harry's keen to know what he'd be handing over. Before long he's racing against time, and six necromancers, to get the Word. And to prevent a Halloween that would truly wake the dead.`},
             {P:`Magic - it can get a guy killed.`
         }]
     }

@@ -1,5 +1,5 @@
 
-import { bookPage } from "../bookPageTemplate.js"
+import { bookPage } from "../../bookPageTemplate.js"
 
 const bookInfo = [
     {

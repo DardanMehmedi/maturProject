@@ -16,3 +16,6 @@ const bookInfo = [
 ]
 
 bookPage(bookInfo);
+
+bookInfo[0].book
+
