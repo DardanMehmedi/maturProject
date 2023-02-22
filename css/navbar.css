@@ -81,7 +81,7 @@
 
 .border{
     display: flex;
-    height: 80rem;
+    height: auto;
     width: 51rem;
  }
 
@@ -96,7 +96,7 @@
     justify-content: center;
     column-gap: 10rem;
     padding-top: 5rem;
-    overflow: scroll;
+    overflow: auto;
  }
 
  .textFlex{
@@ -121,11 +121,11 @@
     top: 8rem;
     right: 13.7rem;
     width: 21rem;
-    background-color: #c5e1f9;
+    background-color:white;
     z-index: 2;
     font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     max-height: 90rem;
     overflow-y: auto;
  }
@@ -135,7 +135,11 @@
  }
 
  .search a:hover{
-    background-color: #8ec7f8;
+    background-color: rgb(145, 201, 249);
     border-radius: 0.5rem;
     padding: 0.3rem
+ }
+
+ .searchPadding{
+    padding: 0.5rem;
  }

@@ -63,8 +63,6 @@ function navbar (menuList) {
             fButton.append(`FICTION`)
             nFButton.append(`NON-FICTION`)
             cButton.append(`CLASSICS`)
-            reset.append(`ALL`)
-
 
 
             liDiv.classList.add(`hoverMenu`)

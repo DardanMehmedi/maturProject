@@ -1,10 +1,10 @@
 
 
 let search = document.getElementById(`search`)
-const office = ['Kelly', 'Creed', 'Stanley', 'Oscar', 'Michael', 'Jim', 'Darryl', 'Phyllis', 'Pam', 'Dwight', 'Angela', 'Andy', 'William', 'Ryan', 'Toby', 'Bob']
 let append = document.getElementById(`append`)
 let newDiv = document.createElement(`div`)
 newDiv.classList.add(`search`)
+
 
 const authorInfo = [
     {
@@ -13,227 +13,227 @@ const authorInfo = [
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/AntR.html`,
+      href: `/authorPages/bAnt.html`,
       name: `Anthony Ryan`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/BarO.html`,
+      href: `/authorPages/bBar.html`,
       name: `Barack Obama`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/BramS.html`,
+      href: `/authorPages/bBram.html`,
       name: `Bram Stoker`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/BraS.html`,
+      href: `/authorPages/bBra.html`,
       name: `Brandon Sanderson`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/CarC.html`,
+      href: `/authorPages/bCarc.html`,
       name: `Carlo Collodi`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/ChaD.html`,
+      href: `/authorPages/bCha.html`,
       name: `Charles Dickens`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/JamW.html`,
+      href: `/authorPages/bJam.html`,
       name: `Dr. James Watson`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/EdwS.html`,
+      href: `/authorPages/bEdw.html`,
       name: `Edwards W. Said`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/EliK.html`,
+      href: `/authorPages/bEli.html`,
       name: `Elizabeth Kolbert`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/ScoF.html`,
+      href: `/authorPages/bSco.html`,
       name: `F.Scott Fitzgerald`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/FraH.html`,
+      href: `/authorPages/bFra.html`,
       name: `Frank Herbert`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/GRRM.html`,
+      href: `/authorPages/bGRRM.html`,
       name: `George R.R Martin`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/GerG.html`,
+      href: `/authorPages/bGer.html`,
       name: `Germaine Greer`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/GGK.html`,
-      name: `GuyGavriel Kay`,
+      href: `/authorPages/bGGK.html`,
+      name: `Guy Gavriel Kay`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/HomE.html`,
+      href: `/authorPages/bHom.html`,
       name: `Homer`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/JmbA.html`,
+      href: `/authorPages/bJmb.html`,
       name: `J.M. Barrie`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/JRRT.html`,
+      href: `/authorPages/bJJRT.html`,
       name: `J.R.RTolkien`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/JacL.html`,
+      href: `/authorPages/bJac.html`,
       name: `Jack London`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/JimB.html`,
+      href: `/authorPages/bJimb.html`,
       name: `Jim Butcher`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/JoaD.html`,
+      href: `/authorPages/bJoa.html`,
       name: `Joan Didion`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/JoeA.html`,
+      href: `/authorPages/bJoe.html`,
       name: `Joe Abercrombie`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/LeiB.html`,
+      href: `/authorPages/bLei.html`,
       name: `Leigh Bardugo`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/LeoT.html`,
+      href: `/authorPages/bLeo.html`,
       name: `Leo Tolstoy`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/LewC.html`,
+      href: `/authorPages/bLew.html`,
       name: `Lewis Carroll`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/MarS.html`,
+      href: `/authorPages/bMar.html`,
       name: `Mary Shelley`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/MicH.html`,
+      href: `/authorPages/bMic.html`,
       name: `Michael Herr`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/NaoK.html`,
+      href: `/authorPages/bNao.html`,
       name: `Naomi Klein`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/NeiG.html`,
+      href: `/authorPages/bNei.html`,
       name: `Neil Gaiman`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/NikC.html`,
+      href: `/authorPages/bNik.html`,
       name: `Nik Cohn`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/OliS.html`,
+      href: `/authorPages/bOli.html`,
       name: `Oliver Sacks`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/PhiP.html`,
+      href: `/authorPages/bPP.html`,
       name: `Philip Pullman`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/RicD.html`,
+      href: `/authorPages/bRic.html`,
       name: `Richard Dawkins`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/RobJ.html`,
+      href: `/authorPages/bRobJ.html`,
       name: `Robert Jordan`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/RobS.html`,
+      href: `/authorPages/bRobS.html`,
       name: `Robert Louis Stevenson`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/RobH.html`,
+      href: `/authorPages/bRob.html`,
       name: `Robin Hobb`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/Scol.html`,
+      href: `/authorPages/bSco.html`,
       name: `Scott Lynch`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/SeaH.html`,
+      href: `/authorPages/bSea.html`,
       name: `Seasmus Heaney`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/SirD.html`,
+      href: `/authorPages/bSir.html`,
       name: `Sir Arthur Conan Doyle`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/SteH.html`,
+      href: `/authorPages/bSte.html`,
       name: `Stephen Hawking`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/SteK.html`,
+      href: `/authorPages/bSteK.html`,
       name: `Stephen King`,
       class: `FictionAuthors`,
     },
     {
-      href: `authorPages/SunT.html`,
+      href: `/authorPages/bSun.html`,
       name: `Sun Tzu`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/TedH.html`,
+      href: `/authorPages/bTed.html`,
       name: `Ted Hughes`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/TomW.html`,
+      href: `/authorPages/bTom.html`,
       name: `Tom Wolfe`,
       class: `NonFictionAuthors`,
     },
     {
-      href: `authorPages/VicH.html`,
+      href: `/authorPages/bVic.html`,
       name: `Victor Hugo`,
       class: `ClassicAuthors`,
     },
     {
-      href: `authorPages/WilS.html`,
+      href: `/authorPages/bWil.html`,
       name: `William Shakespeare`,
       class: `ClassicAuthors`,
     }
@@ -1478,10 +1478,14 @@ console.log(`gaga`,search)
 
 
 
-search.addEventListener(`change`, (e)=>{
+search.addEventListener(`keyup`, (e)=>{
     newDiv.innerHTML = ``
+    newDiv.classList.add(`searchPadding`)
     if (e.target.value === ``)
-    {return null}
+    {
+      newDiv.classList.remove(`searchPadding`)
+      return null
+    }
     var str = e.target.value.toLowerCase()
     var filteredArr = authorInfo.filter((x)=>{
         return x.name.toLowerCase().includes(str)
