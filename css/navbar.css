@@ -85,6 +85,11 @@
     width: 51rem;
  }
 
+ .aborder{
+    display: flex;
+    height: auto;
+ }
+
  .TitleStyle{
     font-size: 9rem;
     display: flex;

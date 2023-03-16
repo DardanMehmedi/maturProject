@@ -28,8 +28,7 @@ body{
     row-gap: 5px;
     column-gap: 20px;
     padding-top: 10px;
-    padding-left: 10px;
-    padding-left: 7rem;
+    justify-content: center;
   }
   
   .dull {

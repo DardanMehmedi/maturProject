@@ -11,8 +11,8 @@ bookDiv.append(bookCover);
 bookDiv.append(bookTitle);
 
 
-function bookPage(bookInfo){
-    bookCover.classList.add(`border`)
+function authorPage(bookInfo){
+    bookCover.classList.add(`aborder`)
     bookTitle.classList.add(`TitleStyle`)
     let textDiv = document.createElement(`div`)
     bookDiv.append(textDiv)
@@ -39,6 +39,6 @@ function bookPage(bookInfo){
 
     
 
-export {bookPage}
+export {authorPage}
 
 

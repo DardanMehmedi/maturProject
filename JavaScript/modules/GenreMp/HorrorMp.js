@@ -133,12 +133,12 @@ const horrorBooks = [
       },
       {
         bookPage: `#`,
-        bookCover: `../../covers/Horror/The Squaw.jpg`,
+        bookCover: `../covers/Horror/The Squaw.jpg`,
         bookTitle: `La Squaw`,
       },
       {
         bookPage: `#`,
-        bookCover: `../../covers/Horror/The Judges House.jpg`,
+        bookCover: `../covers/Horror/The Judges House.jpg`,
         bookTitle: `The Judges House`,
       },
   ];

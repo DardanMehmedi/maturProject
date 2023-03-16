@@ -14,7 +14,7 @@ const menuList = [
     items: [],
     },
     {
-    title: 'Genre ▼',
+    title: 'Genre',
     items: [
         {
         title: 'Horror',
